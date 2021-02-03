@@ -1,0 +1,28 @@
+{
+    "cart": [
+      {
+        "url": "#",
+        "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/central-asia/tr/mkt/pdp/accessories/freebuds--3i/pc-@2x-v6.jpg",
+        "name": "HUAWEI FreeBuds 3i",
+        "seller": "HUAWEI TÜRKİYE",
+        "sepettemi":false
+      },
+      {
+        "url": "#",
+        "image": "https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/wearables/band-3e/img/pic_s6_img.jpg",
+        "name": "HUAWEI Band 3e",
+        "seller": "HUAWEI",
+        "sepettemi":false
+        
+      }
+    ],
+    "sepet": [
+      {
+        "url": "https://www.amazon.com/gp/product/B0142CCDT2/ref=ox_sc_act_image_1?ie=UTF8&psc=1&smid=A2VT4H683M5NNA",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/31yjqkf3PAL._SS100_.jpg",
+        "name": "Apple Watch Band Soft Silicone Replacement Sport Band for 38mm Apple Watch",
+        "seller": "Apple",
+        "sepettemi":true
+      }
+    ]
+  }

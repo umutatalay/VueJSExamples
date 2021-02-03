@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>e ticaret sitesi</title>
+        <link rel="stylesheet" type="text/css" href="sepet.css" />
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script type="text/javascript" src="sepet.js"></script>
+        
+  
+
+    </head>
+    <body>
+        <div id="app">
+            <p v-if="isLoading">Loading // Ürünler Yükleniyor.</p>
+            <h1>ÜRÜNLER Products</h1>
+            <p v-if="!cart.length"> Ürün Kalmadı Hepsini Sepete Eklediniz. :)</p>
+            <p v-for="(item,index) in cart">
+                <table>
+                    <tr>
+                        <td>
+                            <img style="height: 100px; width: 200px;" v-bind:src="item.image">
+                        </td>
+                        <td>
+                        
+                            <strong style="color: blue;">{{item.name}}</strong>
+                             <br>    
+                            {{item.seller}}
+                            <a href="#" v-on:click="SepeteEkle(index)">Sepete Ekle</a>
+
+                        </td>
+                    </tr>
+                </table>
+                
+                
+                
+            </p>
+            
+          <h1>
+              SEPETE EKLENENLER  Shopping Cart
+          </h1>
+          <p v-if="!sepet.length"> Sepette ürün yok. Your Shopping Cart is empty
+        </p>
+          <p v-for="(item,index) in sepet">
+            <table>
+                <tr>
+                    <td>
+                        <img style="height: 100px; width: 200px;" v-bind:src="item.image">
+                    </td>
+                    <td>
+                        <strong style="color: blue;">{{item.name}}</strong>
+                         <br>    
+                        {{item.seller}}
+                        <a href="#" v-on:click="SepettenCikart(index)">Sepettten çıkartt</a>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            
+        </p>
+        </div>
+       
+
+    
+       
+    </body> 
+</html>
